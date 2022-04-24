@@ -76,7 +76,9 @@ https://hub.docker.com/repository/docker/krc993/krc9_cs643_assignment2
 
 ## Docker Commands
 
-docker pull krc9/Programm2_CS643
+docker pull krc993/krc9_cs643_assignment2
+- or 
+docker pull krc993/krc9_cs643_assignment2:latest
 
-docker run -v [fullLocalPath of TestDataset.csv: data/TestDataset.csv ] krc9/Programm2_CS643
+docker run -v [local_path_to TestDataset.csv: data/TestDataset.csv ] krc993/krc9_cs643_assignment2
 
