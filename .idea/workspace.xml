@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a7ee424-f73e-496d-bbef-60f1cb19d263" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/krc9/wineproject/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/krc9/wineproject/ModelTrainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/krc9/wineproject/Predict.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simple.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,20 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/TrainingModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2312">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wineassignment.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+            <state relative-caret-position="306">
+              <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -52,10 +42,22 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="513">
-                <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+              <first_editor relative-caret-position="320">
+                <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="41" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/ConstantsVars.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,6 +67,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>pjk</find>
+      <find>BUCKET</find>
+      <find>SECRET_KEY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,6 +111,17 @@
             <path>
               <item name="winequality" type="b2602c69:ProjectViewProjectNode" />
               <item name="Programm2_CS643" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="winequality" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Programm2_CS643" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="winequality" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Programm2_CS643" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="TrainingModel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="winequality" type="b2602c69:ProjectViewProjectNode" />
@@ -163,7 +178,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager">
     <configuration name="TrainingModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.krc9.wineproject.TrainingModel" />
       <module name="wineassignment" />
@@ -187,8 +202,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.TrainingModel" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -207,12 +222,12 @@
       <workItem from="1650834136414" duration="960000" />
       <workItem from="1650835810741" duration="937000" />
       <workItem from="1650836767133" duration="21000" />
-      <workItem from="1650836975910" duration="1977000" />
+      <workItem from="1650836975910" duration="3536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5398000" />
+    <option name="totallyTimeSpent" value="6957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="15" width="1849" height="1013" extended-state="0" />
@@ -228,12 +243,12 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3288835" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3284091" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.225" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35" />
       <window_info anchor="bottom" id="Docker" order="8" weight="0.2534091" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -259,16 +274,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/schema.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/ConstantsVars.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/ModelPredict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
@@ -286,15 +291,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/TrainingModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wineassignment.iml">
       <provider selected="true" editor-type-id="text-editor">
@@ -310,11 +308,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/TrainingModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/krc9/wineproject/ConstantsVars.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="513">
-            <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <first_editor relative-caret-position="320">
+            <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>
