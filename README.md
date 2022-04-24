@@ -76,7 +76,7 @@ https://hub.docker.com/repository/docker/krc993/krc9_cs643_assignment2
 
 ## Docker Commands
 
-docker pull pratik1596/CS643_Wine_Prediction
+docker pull krc9/Programm2_CS643
 
 docker run -v [fullLocalPath of TestDataset.csv: data/TestDataset.csv ] krc9/Programm2_CS643
 
