@@ -2,6 +2,8 @@
 Programming Assignment 2
 - Kendy Colon - krc9
 - 4/24/2022
+## Complete detailed instructions in PDF FIles
+https://github.com/krc9/Programm2_CS643/blob/main/Project%20Instructions%20KRC9.pdf
 
 ## Goal
 The purpose of this individual assignment is to learn how to develop parallel machine learning (ML)
