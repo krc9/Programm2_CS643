@@ -69,11 +69,11 @@ public class ModelPredict {
                 .option("multiline", true).option("sep", ";").option("quote", "\"")
                 .option("dateFormat", "M/d/y").option("inferSchema", true).load(name);
 
-        Dataset<Row> lblFeatureDf = validationDf.withColumnRenamed("quality", "label").select("label",
+        Dataset<Row> featuresDataFrame = validationDf.withColumnRenamed("quality", "label").select("label",
                 "alcohol", "sulphates", "pH", "density", "free sulfur dioxide", "total sulfur dioxide",
                 "chlorides", "residual sugar", "citric acid", "volatile acidity", "fixed acidity");
 
-        lblFeatureDf = lblFeatureDf.na().drop().cache();
+        featuresDataFrame = featuresDataFrame.na().drop().cache();
 
         VectorAssembler assembler =
                 new VectorAssembler().setInputCols(new String[]{"alcohol", "sulphates", "pH", "density",
@@ -81,10 +81,9 @@ public class ModelPredict {
                         "citric acid", "volatile acidity", "fixed acidity"}).setOutputCol("features");
 
         if (transform)
-            lblFeatureDf = assembler.transform(lblFeatureDf).select("label", "features");
+            featuresDataFrame = assembler.transform(featuresDataFrame).select("label", "features");
 
-
-        return lblFeatureDf;
+        return featuresDataFrame;
     }
 
 

@@ -58,12 +58,12 @@ public class TrainingModel {
 
     public void logisticRegression(SparkSession spark) {
         System.out.println();
-        Dataset<Row> lblFeatureDf = getDataFrame(spark, true, TRAINING_DATASET).cache();
+        Dataset<Row> featuresDataFrame = getDataFrame(spark, true, TRAINING_DATASET).cache();
         LogisticRegression logReg = new LogisticRegression().setMaxIter(100).setRegParam(0.0);
 
         Pipeline pl1 = new Pipeline();
         pl1.setStages(new PipelineStage[]{logReg});
-        PipelineModel model1 = pl1.fit(lblFeatureDf);
+        PipelineModel model1 = pl1.fit(featuresDataFrame);
 
         LogisticRegressionModel lrModel = (LogisticRegressionModel) (model1.stages()[0]);
         LogisticRegressionTrainingSummary trainingSummary = lrModel.summary();
@@ -119,18 +119,18 @@ public class TrainingModel {
 
         validationDf.show(5);
 
-        Dataset<Row> lblFeatureDf = validationDf.select("label", "alcohol", "sulphates", "pH",
+        Dataset<Row> featuresDataFrame = validationDf.select("label", "alcohol", "sulphates", "pH",
                 "density", "free_sulfur_dioxide", "total_sulfur_dioxide", "chlorides", "residual_sugar",
                 "citric_acid", "volatile_acidity", "fixed_acidity");
 
-        lblFeatureDf = lblFeatureDf.na().drop().cache();
+        featuresDataFrame = featuresDataFrame.na().drop().cache();
         VectorAssembler assembler =
                 new VectorAssembler().setInputCols(new String[]{"alcohol", "sulphates", "pH", "density",
                         "free_sulfur_dioxide", "total_sulfur_dioxide", "chlorides", "residual_sugar",
                         "citric_acid", "volatile_acidity", "fixed_acidity"}).setOutputCol("features");
 
         if (transform)
-            lblFeatureDf = assembler.transform(lblFeatureDf).select("label", "features");
-        return lblFeatureDf;
+            featuresDataFrame = assembler.transform(featuresDataFrame).select("label", "features");
+        return featuresDataFrame;
     }
 }
