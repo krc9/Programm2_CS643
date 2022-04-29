@@ -20,6 +20,11 @@
     <dependencies>
         <!-- Spark -->
         <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-asm6-shaded</artifactId>
+            <version>4.10</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_${scala.version}</artifactId>
             <version>${spark.version}</version>

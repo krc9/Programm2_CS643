@@ -51,7 +51,8 @@ public class TrainingModel {
             TrainingModel parser = new TrainingModel();
             parser.logisticRegression(spark);
         } else {
-            System.out.print("TrainingDataset.csv doesn't exists");
+            System.out.println("TrainingDataset.csv doesn't exists");
+            System.out.println(TRAINING_DATASET);
         }
     }
 

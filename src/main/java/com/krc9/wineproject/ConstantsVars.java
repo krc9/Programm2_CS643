@@ -14,8 +14,8 @@ public class ConstantsVars {
     //APP
     public static final String APP_NAME = "Wine-Assigment-2-test";
     // DATA REFERENCES
-    public static final String MODEL_PATH = "data/TrainingModel";
-    public static final String TESTING_DATASET =  "data/TestDataset.csv";
+    public static final String MODEL_PATH = "TrainingModel";
+    public static final String TESTING_DATASET =  "TestDataset.csv";
     public static final String TRAINING_DATASET = "TrainingDataset.csv";
     public static final String VALIDATION_DATASET =  "ValidationDataset.csv";
 
